@@ -18,9 +18,21 @@ namespace Snake_less
           Point p2 = new Point(4,3,'#');
 
             p2.Draw();
+
+          HLine up = new HLine(5,20,4,'#');
+            up.Draw();
+           
+         /*   List<Point> NumList = new List<Point>();
+            NumList.Add(new Point(4, 3, '*'));
+            NumList.Add(new Point(2, 3, '*'));
+            NumList.Add(new Point(3, 3, '*'));
+
+            foreach(Point i in NumList)
+            {
+                i.Draw();
+            }*/
+
             
-
-
 
             Console.ReadKey();
         }
