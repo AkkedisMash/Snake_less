@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake_less
 {
-    class Vline
+    class Vline : Figure
     {
-        List<Point> plist;
+        //List<Point> plist;
 
         public Vline(int yUpper, int yLower, int x, char sym)
         {
@@ -19,12 +19,6 @@ namespace Snake_less
             }
         }
 
-        public void Draw()
-        {
-            foreach (Point i in plist)
-            {
-                i.Draw();
-            }
-        }
+     
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake_less
 {
-    class HLine
+    class HLine : Figure
     {
-        List<Point> plist;
+       // List<Point> plist;
         
         public HLine(int xLeft, int xRight, int y, char sym)
         {
@@ -28,13 +28,6 @@ namespace Snake_less
             
         } 
 
-        public void Draw()
-        {
-            foreach (Point i in plist)
-            {
-                i.Draw();
-            }
 
-        }
     }
 }

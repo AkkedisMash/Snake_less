@@ -10,31 +10,25 @@ namespace Snake_less
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(6, 12, 'h');
-     
-            p1.Draw();
+            //Отрисовка границ
+            // Console.SetBufferSize(125,80);
+            //Задаем две точки, определяющие границы поля
+            Point UpperLeft = new Point(1, 1, '_');
+            Point LowerDown = new Point(80, 30, '_');
 
+            HLine up = new HLine(UpperLeft.x, LowerDown.x, UpperLeft.y, '#');
+            HLine down = new HLine(UpperLeft.x, LowerDown.x, LowerDown.y, '#');
+            Vline left = new Vline(UpperLeft.y, LowerDown.y, UpperLeft.x, '#');
+            Vline right = new Vline(UpperLeft.y, LowerDown.y, LowerDown.x, '#');
 
-          Point p2 = new Point(4,3,'#');
-
-            p2.Draw();
-
-          HLine up = new HLine(5,20,4,'#');
             up.Draw();
-
-            /*   List<Point> NumList = new List<Point>();
-               NumList.Add(new Point(4, 3, '*'));
-               NumList.Add(new Point(2, 3, '*'));
-               NumList.Add(new Point(3, 3, '*'));
-
-               foreach(Point i in NumList)
-               {
-                   i.Draw();
-               }*/
-
-            Vline left = new Vline(5, 20, 5, '#');
+            down.Draw();
             left.Draw();
+            right.Draw();
 
+
+
+           
             Console.ReadKey();
         }
 
