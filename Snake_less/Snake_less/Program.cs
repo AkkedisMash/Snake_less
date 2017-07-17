@@ -32,22 +32,19 @@ namespace Snake_less
             Snake sn = new Snake(t, 4, Direction.RIGHT);
             sn.Draw();
 
-            sn.Move();
-            Thread.Sleep(300);
-            sn.Move();
-            Thread.Sleep(300);
-            sn.Move();
-            Thread.Sleep(300);
-            sn.Move();
-            Thread.Sleep(300);
-            sn.Move();
-            Thread.Sleep(300);
-            sn.Move();
-            Thread.Sleep(300);
-            sn.Move();
-            Thread.Sleep(300);
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    sn.HandleKey(key.Key);
+                  
+                }
+                Thread.Sleep(100);
+                sn.Move();
+            }
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
 
     }
