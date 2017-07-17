@@ -49,7 +49,14 @@ namespace Snake_less
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
-            Console.WriteLine(sym);
+            Console.Write(sym);
+        }
+        public void Clear()
+        {
+            //  Console.SetCursorPosition(x, y);
+            //  Console.WriteLine(' ');
+            sym = ' ';
+            Draw();
         }
     }
 }

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Snake_less
 {
@@ -29,8 +31,22 @@ namespace Snake_less
             Point t = new Point(UpperLeft.x+5, UpperLeft.y+5, '*');
             Snake sn = new Snake(t, 4, Direction.RIGHT);
             sn.Draw();
-           
-           
+
+            sn.Move();
+            Thread.Sleep(300);
+            sn.Move();
+            Thread.Sleep(300);
+            sn.Move();
+            Thread.Sleep(300);
+            sn.Move();
+            Thread.Sleep(300);
+            sn.Move();
+            Thread.Sleep(300);
+            sn.Move();
+            Thread.Sleep(300);
+            sn.Move();
+            Thread.Sleep(300);
+
             Console.ReadKey();
         }
 
