@@ -19,6 +19,33 @@ namespace Snake_less
             sym = _sym;
         }
 
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            sym = p.sym;
+        }
+
+        public void Move(int offset, Direction dir)
+        {
+            if(dir == Direction.RIGHT)
+            {
+                x = x + offset;
+            }
+            if(dir == Direction.LEFT)
+            {
+                x = x - offset;
+            }
+            if (dir == Direction.UP)
+            {
+                y = y - offset;
+            }
+            if(dir == Direction.DOWN)
+            {
+                y = y + offset;
+            }
+        }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);

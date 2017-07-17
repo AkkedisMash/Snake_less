@@ -26,8 +26,10 @@ namespace Snake_less
             left.Draw();
             right.Draw();
 
-
-
+            Point t = new Point(UpperLeft.x+5, UpperLeft.y+5, '*');
+            Snake sn = new Snake(t, 4, Direction.RIGHT);
+            sn.Draw();
+           
            
             Console.ReadKey();
         }

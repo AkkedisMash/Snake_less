@@ -8,8 +8,7 @@ namespace Snake_less
 {
     class HLine : Figure
     {
-       // List<Point> plist;
-        
+         
         public HLine(int xLeft, int xRight, int y, char sym)
         {
             plist = new List<Point>();
@@ -19,12 +18,6 @@ namespace Snake_less
                               
             }
 
-           /* Point p1 = new Point(9, 6, '*');
-            Point p2 = new Point(10, 6, '*');
-            Point p3 = new Point(11, 6, '*');
-            plist.Add(p1);
-            plist.Add(p2);
-            plist.Add(p3);*/
             
         } 
 
