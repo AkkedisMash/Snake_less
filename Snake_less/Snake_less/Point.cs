@@ -51,6 +51,11 @@ namespace Snake_less
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
+      /*  public bool IsHit(Point fst, Point scnd)
+        {
+
+        }*/
+
         public void Clear()
         {
             //  Console.SetCursorPosition(x, y);

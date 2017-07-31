@@ -32,6 +32,10 @@ namespace Snake_less
             Snake sn = new Snake(t, 4, Direction.RIGHT);
             sn.Draw();
 
+            FoodCreator foodCreator = new FoodCreator();
+            Point food = foodCreator.CreateFood(UpperLeft, LowerDown);
+            food.Draw();
+
             while (true)
             {
                 if (Console.KeyAvailable)
